@@ -13,7 +13,7 @@ function App() {
   //cuando la ruta sea la raiz estariamos llamando al elemento home
 
   return (
-    <Box>
+    <Box  w="100%" h="100vh">
       <Navbar/>
       <Container>
         <Routes>

@@ -2,18 +2,19 @@ import { Image, Box, Heading } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import ImageShop from "../assets/img/shop.png";
 
-export default function Navbar(params) {
-    const navigate = useNavigate();
+export default function Navbar() {
+  const navigate = useNavigate();
 
-    const redirect = () => {
+  const redirect = () => {
     navigate("/");
-    }
+  };
+
   return (
     <Box
       display="block"
       alignItems="center"
       justifyContent="space-evenly"
-      borderBottom="lpx solid #ddd"
+      borderBottom="1px solid #ddd"
     >
       <Image
         src={ImageShop}
@@ -30,9 +31,10 @@ export default function Navbar(params) {
         textTransform="uppercase"
         textAlign="center"
         color="#ff6b6b"
+        fontWeight="900"
         paddingBottom="5"
       >
-        Maria Auxiliadora Station
+        Maria Auxiliadora station
       </Heading>
     </Box>
   );
