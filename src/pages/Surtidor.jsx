@@ -42,15 +42,15 @@ return (
       <Heading textAlign="center" marginBottom="5">
         Selecciona el surtidor
       </Heading>
-      <Grid templateColumns="repeat(2, 1fr)" gap={9}>
+      <Grid className='content-box' templateColumns="repeat(2, 1fr)" gap={9}>
         {surtidores.map((surtidor) => (
           <GridItem
             key={surtidor.id}
-            w="100%"
+            w="80%"
             h="40"
-            margin="5"
+            margin="3"
             borderRadius="10"
-            padding="4"
+            padding="2"
             cursor="pointer"
             textAlign="center"
             boxShadow="0px 4px 10px -3px rgb(117 117 177);"
@@ -68,7 +68,7 @@ return (
             <Image
               src={ImageCar}
               alt={surtidor.name}
-              width={100}
+              width={90}
               margin="0 auto"
             />
           </GridItem>
