@@ -3,7 +3,9 @@ import ImageCar from '../assets/img/car.png'
 import {useNavigate} from 'react-router-dom'
 
 export default function Surtidor() {
-const surtidores = [
+    const navigate = useNavigate();
+
+    const surtidores = [
     {
         id:1,
         name:"surtidor 1"
@@ -32,6 +34,7 @@ const surtidores = [
 
 const clickSurtidor = (id) => {
     localStorage.setItem("surtidor", id)
+    navigate("/product")
 }
 
 return (
